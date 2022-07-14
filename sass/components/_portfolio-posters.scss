@@ -1,0 +1,96 @@
+.posters__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px 30px;
+    }
+    
+    .posters-block {
+    @media screen and (min-width: 320px) {
+        width: 100%; 
+        }
+    @media  screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+        }
+    @media  screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3); 
+    }
+    
+    }
+    .posters-top-wrap {
+    position: relative;
+    overflow: hidden;
+    
+    }
+    
+    .posters-cover-text {
+    @include flexCenter ();
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding-left: 26px;
+    padding-right: 24px;
+    height: 100%;
+    transform: translateY(101%);
+    transition: transform 250ms;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .posters-link:hover & {
+        transform: translateY(0);
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .posters-link:focus & {
+        transform: translateY(0);
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
+        }
+    }
+    
+    .posters-link {
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px 
+    rgba(0, 0, 0, 0.12), 0px 4px 4px 
+    rgba(0, 0, 0, 0.06), 1px 4px 6px 
+    rgba(0, 0, 0, 0.16);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    }
+    
+    .posters-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: #212121;
+    padding-bottom: 10px;
+    }
+    .text-ander-img {
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #757575;
+    }
+    
+    .content-posters {
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #EEEEEE;
+    padding: 20px 24px;
+    }

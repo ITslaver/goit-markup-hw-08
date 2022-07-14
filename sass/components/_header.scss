@@ -1,0 +1,44 @@
+
+.header {
+border: 1px solid #ECECEC;
+padding-left: 15px;
+padding-right: 15px;
+}
+.header .container {
+    @include flexCenter ();
+    }
+    .header {
+    
+    @media screen and (max-width: 768px){
+    display: flex;
+    }
+    position: relative;
+    }
+    
+    .logo {
+    font-family: $fontLogo;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.20;
+    @media screen and (min-width: 768px){
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        margin-right: 88px;
+    }
+    @media screen and (min-width: 1200px){
+        margin-right: 93px;
+    }
+    }
+    .logo-web {
+    color: #2196F3; 
+    }
+    
+
+    .logo-studio {
+    color: #000000;
+    
+    }

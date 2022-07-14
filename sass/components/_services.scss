@@ -1,0 +1,100 @@
+.services {
+    background-color: #2F303A;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url('../img/mob-background-Img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    block-size: cover;
+    max-width: 320px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px; 
+
+    @include mq(retina){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/mob-background-Img2x.jpg);
+        }
+        @include mq(mobile){
+        max-width: 480px;
+        }
+
+    @include mq(tablet){
+        max-width: 768px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/tablet-background-img.jpg);
+        }
+
+    @include mq(retina){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/tablet-background-img2x.jpg);
+        }
+
+    @include mq(desktop){
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/services-background-Img.jpg);
+        }
+
+    @include mq(retina){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/background-Img2x.jpg);
+        }
+    }
+    
+    .services-content {
+        @media screen and (min-width: 480px) and (max-width: 768px){
+        max-width: 360px;
+        }
+    max-width: 696px;
+    text-align: center;
+    margin: 0 auto; 
+    }
+    
+    .services-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    @media  screen and (max-width: 768px){
+        font-size: 26px;
+        line-height: 1.62;
+    }
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    }
+    .services-btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #FFFFFF;
+    background-color: #F5F4FA;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.90;
+    letter-spacing: 0.06em;
+    background-color: #2196F3;
+    padding: 10px 32px;
+    border-radius: 4px;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: #FFFFFF;
+        background-color: #188CE8;
+        transition-property:color, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+    
+    

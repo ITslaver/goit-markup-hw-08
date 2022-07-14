@@ -1,0 +1,68 @@
+.castomers__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+    
+    .castomers__item {
+    width: 100%;
+    display: flex;
+    @media screen and (min-width: 320px) {
+        width: calc((100% - 30px) / 2); 
+        // display: flex;
+        }
+    @media  screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+        // display: flex; 
+        }
+        @media  screen and (min-width: 1200px) {
+            width: calc((100% - 150px) / 6); 
+        }
+    }
+
+    .castomers__link {
+    @include flexCenter ();
+
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    @media  screen and (min-width: 320px) {
+        padding: 12px 20px;
+    }
+    @media  screen and (min-width: 480px) {
+        padding: 16px 52px;
+    }
+    @media  screen and (min-width: 768px){
+        padding: 16px 60px;
+    }
+    @media  screen and (min-width: 1200px){
+        padding: 16px 32px;
+    }
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, 
+    &:focus {
+    border-color: var(--accent-color) ;
+    transition-property:color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    }
+    
+    .castomers-icon {
+    fill:#AFB1B8;
+    transition-property:fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .castomers__link:hover &, 
+    .castomers__link:focus & {
+    fill:#2196F3 ;
+    transition-property:fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    }
+    
+    

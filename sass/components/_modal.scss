@@ -1,0 +1,220 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 300ms linear, visibility 300ms linear ;
+    }
+    
+    .backdrop .is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+    }
+    
+    .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 528px;
+    min-height: 581px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: transform 300ms linear;
+    box-shadow: 0px 1px 3px
+    rgba(0, 0, 0, 0.12), 0px 1px 1px 
+    rgba(0, 0, 0, 0.14), 0px 2px 1px
+    rgba(0, 0, 0, 0.2);
+    }
+    
+    .modal-close-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    @include flexCenter ();
+    border-radius: 50%;
+    cursor: pointer;
+    }
+    
+    .close-modal {
+    color: #000000;
+    .modal-close-btn:hover &, 
+    .modal-close-btn:focus & {
+    fill: #2196F3;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    }
+    
+    .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    }
+    
+    .no-scroll {
+    overflow: hidden;
+    }
+    
+    .modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121; 
+    margin-bottom: 12px;
+    }
+    
+    .modal-field {
+    margin-bottom: 10px;
+    }
+    
+    .input-wrap {
+    position: relative;
+    }
+    
+    .madal-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color: #757575;
+    padding-bottom: 4px;
+    }
+    
+    .modal-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    padding-left: 42px;
+    background-color: transparent;
+    outline: transparent;
+    &:focus {
+        border-color: var(--accent-color);
+        }
+    }
+    
+    .input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    .modal-input:focus + & {
+        fill: var(--accent-color);
+        }
+    }
+    
+    .modal-comment {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 21px;
+    padding-top: 12px;
+    outline: transparent;
+    &:focus {
+        border-color: var(--accent-color);
+        }
+        
+        &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(14/12);
+        letter-spacing: 0.01em;   
+        color: rgba(117, 117, 117, 0.5);
+        }
+    }
+    
+    .check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;   
+    color: #757575;
+    @include flexCenter ();
+    }
+    
+    .check-text a{
+    color: var(--accent-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    }
+
+    .check-text a:hover {
+        text-decoration: none;
+        }
+
+    .check-text span {
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid #212121;
+    @include flexCenter ();
+    margin-right: 8px;
+    }
+
+    .input-check:focus + .check-text span {
+        border-color: var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); ;
+        }
+
+    .input-check:checked + .check-text span {
+        background-color: var(--accent-color) ;
+        border: none;
+        }
+    
+    .check-icon {
+    fill: transparent;
+    &:focus {
+        border-color: var(--accent-color);
+        }
+        .input-check:checked + .check-text & {
+            fill: #FFFFFF ;
+            }
+    }
+    
+    .madal-send-btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    margin-left: 124px;
+    margin-top: 30px;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    color: #FFFFFF;
+    background: #2196F3;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: #FFFFFF;
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-property:color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    }
+    
+    

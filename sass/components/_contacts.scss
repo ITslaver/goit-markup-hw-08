@@ -1,0 +1,90 @@
+.contacts {
+    display: none;
+        margin-left: auto;
+    }
+    
+    .contacts__list {
+        @media screen and (max-width: 768px){
+            display: none;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1199.98px){
+                display: flex;
+                margin-left: auto;
+                flex-direction: column;
+                padding-top: 21px;
+                padding-bottom: 21px;
+            }
+            @media screen and (min-width: 1200px){
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+            }
+    }
+    
+    .contacts__item {
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;}
+        }
+        @media screen and (min-width: 1200px){
+            margin-right: 50px;
+            &:last-child {
+                margin-right: 0;}
+        }
+    }
+
+    .contacts__link {
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            font-size: 12px;
+            line-height: 1.16;
+        }
+        @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        }
+    }
+
+    .contacts__link {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.10;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    }
+    
+    
+    
+    .contact__icon {
+    fill: currentColor;
+    // margin-right: 10px;
+        @media screen and (min-width: 767.98px) and (max-width: 1199.98px){
+        margin-right: 8px;
+        }
+        @media screen and (min-width: 1200px){
+        margin-right: 10px;
+        }
+    }

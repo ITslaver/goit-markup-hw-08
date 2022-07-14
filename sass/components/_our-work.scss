@@ -1,0 +1,36 @@
+.our-work {
+    @media  screen and (max-width: 1199px){
+        display: none;
+    }
+}
+
+.our-work__list {
+    @include flexCenter ();
+    }
+    
+    .our-work__img {
+    width: calc((100% - 60px) / 3);
+    &:not(:last-child){
+        gap: 30px;
+        }
+    }
+    
+    
+    .work-top-wrap {
+    position: relative;
+    }
+    
+    .work-cover-text {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 27px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    }
