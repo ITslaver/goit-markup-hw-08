@@ -14,6 +14,7 @@
         }
 }
 
+
 .mob-menu__container {
 position: fixed;
 background-color: #fff;
@@ -52,10 +53,10 @@ align-items: center;
     fill: var(--accent-color);
 }
 
-.mob-menu-close:hover.is-open .mob-menu__icon,
-.mob-menu-close:focus.is-open .mob-menu__icon{
-    fill: #212121;
-}
+// .mob-menu-close:hover.is-open .mob-menu__icon,
+// .mob-menu-close:focus.is-open .mob-menu__icon{
+//     fill: #212121;
+// }
 
 .nav-mob {
 margin-bottom: 50px;

@@ -492,11 +492,6 @@ img {
   fill: var(--accent-color);
 }
 
-.mob-menu-close:hover.is-open .mob-menu__icon,
-.mob-menu-close:focus.is-open .mob-menu__icon {
-  fill: #212121;
-}
-
 .nav-mob {
   margin-bottom: 50px;
 }
@@ -1052,6 +1047,7 @@ img {
   border-radius: 4px;
   padding-left: 21px;
   padding-top: 12px;
+  margin-bottom: 20px;
   outline: transparent;
 }
 .modal-comment:focus {
@@ -1091,10 +1087,6 @@ img {
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.check-box__wrap {
-  margin-top: 20px;
 }
 
 .check-text {
@@ -1887,6 +1879,18 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__position-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: 768px;
+  }
+}
+
 @media screen and (min-width: 320px) {
   .footer__block--position {
     display: -webkit-box;
@@ -1906,26 +1910,19 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__block--position {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer__position-tablet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1933,11 +1930,6 @@ img {
   .footer-content {
     text-align: center;
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-content {
-    margin-right: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2166,12 +2158,14 @@ img {
 }
 @media screen and (min-width: 320px) {
   .footer-submit__input {
+    margin-bottom: 20px;
     width: 300px;
     height: 50px;
   }
 }
 @media screen and (min-width: 480px) {
   .footer-submit__input {
+    margin-bottom: 20px;
     width: 450px;
     height: 50px;
   }
@@ -2248,6 +2242,7 @@ img {
   color: #FFFFFF;
   cursor: pointer;
   border: none;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;

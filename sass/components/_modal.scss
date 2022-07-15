@@ -144,6 +144,7 @@
     border-radius: 4px;
     padding-left: 21px;
     padding-top: 12px;
+    margin-bottom: 20px;
     outline: transparent;
     &:focus {
         border-color: var(--accent-color);
@@ -158,9 +159,6 @@
         }
     }
     
-    .check-box__wrap {
-        margin-top: 20px;
-    }
 
     .check-text {
     font-weight: 400;
