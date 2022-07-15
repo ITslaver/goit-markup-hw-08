@@ -47,18 +47,24 @@
                 <use class="mob-menu__icon-menu" href="./img/icons.svg#icon-mob-menu-icon"></use>
                 </svg>
             </button>
-            <div class="mob-menu__container" id="menu-container" data-menu>
+            
+            <div class="mob-menu__container is-hidden" id="menu-container" data-menu>
+                <div class="mob-container">
                     <button class="mob-menu-close__btn" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
                         <svg class="mob-menu__icon" width="40" height="40" aria-label="переключатель мобильного меню">
                         <use class="mob-menu__icon-close" href="./img/icons.svg#icon-img-modal-close"></use>
                         </svg>
                     </button>
+                    <div class="mob-menu-top">
+                    <nav class="nav-mob">
                     <ul class="mob-menu list">
                         <li class="mob-menu__item"><a href="./index.html" class="mob-menu__link  menu__link--current link">Студия</a></li>
                         <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link link">Портфолио</a></li>
                         <li class="mob-menu__item"><a href="#contacts" class="mob-menu__link link">Контакты</a></li>
                     </ul>
-                
+                    </nav>
+                    </div>
+                    <div class="mob-menu__bottom">
                     <ul class="mob-menu__contacts list">
                     <li class="mob-menu-contacts__item">
                         <a class="mob-contacts__link-tel link" href="tel:+380961111111">
@@ -86,7 +92,8 @@
                         <a href="" class="mob-menu__soc-link link" target="_blank" rel="noopener noreferer" lang="en">LinkedIn</a>
                     </li>
                     </ul>
-                
+                    </div>
+                </div>
                 
             </div>   
     </div>
@@ -127,15 +134,50 @@
             <ul class="our-work__list list">
                 <li class="our-work__img">
                     <div class="work-top-wrap">
-                    <img src="./img/What_are_we_duing-img1.jpg" alt="Разроботка структуры сайта" width="370" height="294" />
+                        <picture>
+                            <source
+                            srcset="
+                            ./img/index/works/desktops-2x.jpg
+                            "
+                            media="(min-width:1200px)"
+                            />
+                        </picture>
+                            <img src="./img/What_are_we_duing-img1.jpg" 
+                            alt="Разроботка структуры сайта" 
+                            width="370" 
+                            height="294"/>
+                        
                     <p class="work-cover-text">Десктопные приложения</p></div></li> 
                 <li class="our-work__img">
                     <div class="work-top-wrap">
-                    <img src="./img/What_are_we_duing-img2.jpg" alt="Настройка адаптивой загрузки" width="370" height="294" />
+                        <picture>
+                            <source
+                            srcset="
+                            ./img/index/works/mobiles-2x.jpg
+                            "
+                            media="(min-width:1200px)"
+                            />
+                        </picture>
+                    <img src="./img/What_are_we_duing-img2.jpg" 
+                    alt="Настройка адаптивой загрузки" 
+                    width="370" 
+                    height="294" />
                     <p class="work-cover-text">Мобильные приложения</p></div></li>
                 <li class="our-work__img">
                     <div class="work-top-wrap">
-                    <img src="./img/What_are_we_duing-img3.jpg" alt="Работа дизайнера" width="370" height="294" />
+                        <picture>
+                            <source
+                            srcset="
+                            ./img/index/works/design-2x.jpg
+                            "
+                            media="(min-width:1200px)"
+                            />
+                        
+                    <img src="./img/What_are_we_duing-img3.jpg" 
+                    alt="Работа дизайнера" 
+                    width="370" 
+                    height="294" />
+                    </picture>
                     <p class="work-cover-text">Дизайнерские решения</p></div></li>
             </ul>
             </div>
@@ -146,16 +188,35 @@
             <h2 class="title">Наша команда</h2>
             <ul class="our-team__list list">
                 <li class="our-team__block">
-                    <img 
-                    srcset="
-                        /img/product-desinger.jpg
-                    ./img/our-team/product-desinger
-                    "
+                    <picture>
+                        <source
+                        srcset="
+                        ./img/index/team/desktop/designer.jpg x1,
+                        ./img/index/team/desktop/designer-2x.jpg x2
+                        "
+                        media="(min-width:1200px)"
+                        />
+                        <source
+                        srcset="
+                        ./img/index/team/tablet/designer-tab.jpg x1,
+                        ./img/index/team/tablet/designer-tab-2x.jpg x2
+                        "
+                        media="(min-width:768px)"
+                        />
+                        <source
+                        srcset="
+                        ./img/index/team/mobile/designer-mob.jpg x1,
+                        ./img/index/team/mobile/designer-mob-2x.jpg x2
+                        "
+                        media="(min-width:320px)"
+                        />
                     
-                    src="./img/our_team-1.jpg" 
+                    <img 
+                    src="./img/index/team/mobile/designer-mob.jpg" 
                     alt="Игорь Демьяненко" 
-                    width="270" 
-                    height="260">
+                    width="450" 
+                    height="460">
+                    </picture>
                     <div class="our-team__content"><h3 class="our-team__name">Игорь Демьяненко</h3>
                     <p lang="en" class="our-team__after-name">Product Designer</p>
                     <ul class="soc__list list">
@@ -187,7 +248,34 @@
                 </div>
                 </li>
                 <li class="our-team__block">
-                    <img src="./img/our_team-2.jpg" alt="Ольга Репина" width="270" height="260">
+                    <picture>
+                        <source
+                        srcset="
+                        ./img/index/team/desktop/frontend.jpg x1,
+                        ./img/index/team/desktop/frontend-2x.jpg x2
+                        "
+                        media="(min-width:1200px)"
+                        />
+                        <source
+                        srcset="
+                        ./img/index/team/tablet/frontend-tab.jpg x1,
+                        ./img/index/team/tablet/frontend-tab-2x.jpg x2
+                        "
+                        media="(min-width:768px)"
+                        />
+                        <source
+                        srcset="
+                        ./img/index/team/mobile/frontend-mob.jpg x1,
+                        ./img/index/team/mobile/frontend-mob-2x.jpg x2
+                        "
+                        media="(min-width:320px)"
+                        />
+                    <img 
+                    src="./img/index/team/mobile/frontend-mob.jpg" 
+                    alt="Игорь Демьяненко" 
+                    width="450" 
+                    height="460">
+                    </picture>
                     <div class="our-team__content"><h3 class="our-team__name">Ольга Репина</h3>
                     <p lang="en" class="our-team__after-name">Frontend Developer</p>
                     <ul class="soc__list list">
@@ -219,7 +307,34 @@
                 </div>
                 </li>
                 <li class="our-team__block">
-                    <img src="./img/our_team-3.jpg" alt="Николай Тарасов" width="270" height="260">
+                    <picture>
+                        <source
+                        srcset="
+                        ./img/index/team/desktop/marketing.jpg x1,
+                        ./img/index/team/desktop/marketing-2x.jpg x2
+                        "
+                        media="(min-width:1200px)"
+                        />
+                        <source
+                        srcset="
+                        ./img/index/team/tablet/marketing-tab.jpg x1,
+                        ./img/index/team/tablet/marketing-tab-2x.jpg x2
+                        "
+                        media="(min-width:768px)"
+                        />
+                        <source
+                        srcset="
+                        ./img/index/team/mobile/marketing-mob.jpg x1,
+                        ./img/index/team/mobile/marketing-mob-2x.jpg x2
+                        "
+                        media="(min-width:320px)"
+                        />
+                    <img 
+                    src="./img/index/team/mobile/marketing-mob.jpg" 
+                    alt="Игорь Демьяненко" 
+                    width="450" 
+                    height="460">
+                    </picture>
                     <div class="our-team__content"><h3 class="our-team__name">Николай Тарасов</h3>
                     <p lang="en" class="our-team__after-name">Marketing</p>
                     <ul class="soc__list list">
@@ -251,7 +366,34 @@
                 </div>
                 </li>
                 <li class="our-team__block">
-                    <img src="./img/our_team-4.jpg" alt="Михаил Ермаков" width="270" height="260">
+                    <picture>
+                        <source
+                        srcset="
+                        ./img/index/team/desktop/ui.jpg x1,
+                        ./img/index/team/desktop/ui-2x.jpg x2
+                        "
+                        media="(min-width:1200px)"
+                        />
+                        <source
+                        srcset="
+                        ./img/index/team/tablet/ui-tab.jpg x1,
+                        ./img/index/team/tablet/ui-tab-2x.jpg x2
+                        "
+                        media="(min-width:768px)"
+                        />
+                        <source
+                        srcset="
+                        ./img/index/team/mobile/ui-mob.jpg x1,
+                        ./img/index/team/mobile/ui-mob-2x.jpg x2
+                        "
+                        media="(min-width:320px)"
+                        />
+                    <img 
+                    src="./img/index/team/mobile/ui-mob.jpg" 
+                    alt="Игорь Демьяненко" 
+                    width="450" 
+                    height="460">
+                    </picture>
                     <div class="our-team__content"><h3 class="our-team__name">Михаил Ермаков</h3>
                     <p lang="en" class="our-team__after-name">UI Designer</p>
                     <ul class="soc__list list">
@@ -332,15 +474,19 @@
     </main>
     <!----------------------------------------------------Foooter---------------->
     <footer class="footer">
-    <div class="footer__conteiner adaptation">
+    <div class="footer__conteiner footer__block--position">
+    <div class="footer__position-tablet">
         <div class="footer-content">
         <a class="logo-footer link" href="./index.html" lang="en">
         <span class="logo-web">Web</span><span class="footer-logo-studio">Studio</span></a>
         <address id="contacts">
             <ul class="contact__list list">
-                <li class="footer-contacts__item"><a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858" target="_blank" rel="noopener noreferrer nofollow" class="contacts__address link">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li class="footer-contacts__item"><a href="mailto:info@example.com" class="contacts__link link">info@example.com</a></li>
-                <li class="footer-contacts__item"><a href="tel:+380991111111" class="contacts__link link">+38 099 111 11 11</a></li>
+                <li class="footer-contacts__item">
+                    <a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858" target="_blank" rel="noopener noreferrer nofollow" class="contacts__address link">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li class="footer-contacts__item">
+                    <a href="mailto:info@example.com" class="contacts__link link">info@example.com</a></li>
+                <li class="footer-contacts__item">
+                    <a href="tel:+380991111111" class="contacts__link link">+38 099 111 11 11</a></li>
             </ul>
         </address>
         </div>
@@ -374,6 +520,7 @@
                     </a></li>
             </ul>
         </div>
+    </div>
         
         <div class="footer-submit">
             <h2 class="footer__title">Подпишитесь на рассылку</h2>
@@ -389,13 +536,14 @@
                     <use href="./img/icons.svg#icon-icon-telegram"></use>
                 </svg>
                 Подписаться
-            </button></div>
+            </button>
+            </div>
         </div>
     </div>
     </footer>
     <!------------------------------------------------Modal window------------->
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
+        <iv class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="close-modal" width="18" height="18">
                     <use href="./img/icons.svg#icon-img-modal-close"></use>
@@ -471,6 +619,7 @@
             value="privacy"
             id="privacy"
             />
+            <div class="check-box__wrap">
             <label for="privacy" class="check-text">
                 <span>
                     <svg class="check-icon" width="11" height="8">
@@ -479,13 +628,15 @@
                 </span>
                 Соглашаюсь с рассылкой и принимаю &nbsp<a href="">Условия договора</a></label>
             </div>
+            </div>
 
-            <button type="submit" class="madal-send-btn">Отправить</button>
+            <div class="box__modal-send-btn">
+            <button type="submit" class="madal-send-btn">Отправить</button></div>
             </form>
-        </div>
+        </iv>
     </div>
-    <script src="./js/modal.js"></script>
     <script src="./js/mobil-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 

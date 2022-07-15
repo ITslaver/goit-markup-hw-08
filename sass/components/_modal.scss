@@ -6,7 +6,10 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 300ms linear, visibility 300ms linear ;
-    }
+    @media screen and (max-width: 767px) {
+        padding: 94px 15px;
+    }    
+}
     
     .backdrop .is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
@@ -17,8 +20,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
-    min-height: 581px;
+    // width: 528px;
+    // min-height: 581px;
     padding: 40px;
     background-color: #fff;
     border-radius: 4px;
@@ -27,6 +30,26 @@
     rgba(0, 0, 0, 0.12), 0px 1px 1px 
     rgba(0, 0, 0, 0.14), 0px 2px 1px
     rgba(0, 0, 0, 0.2);
+    @media screen and (min-width: 320px){
+    width: 400px;
+    min-height: 609px;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 450px;
+        min-height: 609px;
+        }
+
+    @media screen and (min-width: 1199px){
+            width: 528px;
+            min-height: 581px;
+            
+        }
+    }
+    
+    .modal-form {
+        align-items: center;
+        justify-content: center;
     }
     
     .modal-close-btn {
@@ -135,6 +158,10 @@
         }
     }
     
+    .check-box__wrap {
+        margin-top: 20px;
+    }
+
     .check-text {
     font-weight: 400;
     font-size: 14px;
@@ -142,14 +169,48 @@
     letter-spacing: 0.03em;   
     color: #757575;
     @include flexCenter ();
+    @media screen and (min-width: 320px) {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+
+    }
+    @media screen and (min-width: 768px) {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.30;
+        letter-spacing: 0.03em;
+    }
+    @media screen and (min-width: 1199px) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
     }
     
     .check-text a{
     color: var(--accent-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @media screen and (min-width: 320px) {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+    }
+    @media screen and (min-width: 768px) {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 1.30;
+        letter-spacing: 0.03em;
+    }
+    @media screen and (min-width: 1199px) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+    
     }
 
     .check-text a:hover {
@@ -184,6 +245,11 @@
             fill: #FFFFFF ;
             }
     }
+
+    .box__modal-send-btn {
+    display: flex;
+    justify-content: center;
+    }
     
     .madal-send-btn {
     font-family: 'Roboto';
@@ -193,7 +259,6 @@
     line-height: 1.88;
     align-items: center;
     text-align: center;
-    margin-left: 124px;
     margin-top: 30px;
     letter-spacing: 0.06em;
     width: 200px;
