@@ -6,6 +6,7 @@
 
 .our-work__list {
     @include flexCenter ();
+    gap: 30px;
     }
     
     .our-work__img {

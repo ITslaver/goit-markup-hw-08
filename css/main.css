@@ -645,7 +645,7 @@ img {
     background-color: var(--accent-color);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .menu__link--current::after {
     content: "";
     position: absolute;
@@ -1416,6 +1416,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 30px;
 }
 
 .our-work__img {
@@ -1977,6 +1978,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-content {
     text-align: start;
+    margin-bottom: 0;
   }
 }
 
