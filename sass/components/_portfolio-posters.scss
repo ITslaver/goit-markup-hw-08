@@ -94,3 +94,9 @@
     border-color: #EEEEEE;
     padding: 20px 24px;
     }
+
+    .tablet__padding {
+        @media  screen and (min-width: 768px) {
+            padding: 20px 24px 56px;
+            }
+    }

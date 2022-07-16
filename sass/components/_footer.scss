@@ -259,9 +259,11 @@
     }
     
     .footer-submit__form {
-    margin-right: 12px;
+        @media  screen and (min-width: 1200px){
+            margin-right: 12px;
     }
-    
+    }
+
     .footer-submit__btn {
         display: flex;
     // @include flexCenter ();
