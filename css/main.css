@@ -1894,16 +1894,11 @@ img {
   padding-bottom: 60px;
 }
 
-.footer__conteiner {
+.conteiner {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-@media screen and (min-width: 1200px) {
-  .footer__conteiner {
-    width: 1200px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1962,6 +1957,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 1200px;
   }
 }
 
