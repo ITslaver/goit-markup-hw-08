@@ -1901,9 +1901,6 @@ img {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
     width: 100%;
   }
 }
@@ -1911,9 +1908,6 @@ img {
   .footer__position-tablet {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
 }
 
@@ -1945,9 +1939,9 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__block--position {
     margin: 0 auto;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

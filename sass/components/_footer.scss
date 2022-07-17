@@ -11,17 +11,16 @@
     .footer__position-tablet {
         @media screen and (min-width: 768px) {
             display: flex;
-            
             justify-content: space-around;
-            align-items: baseline;
+            // align-items: baseline;
             width: 100%;
             
             }
             @media screen and (min-width: 1200px) {
-                // display: flex;
-                justify-content: space-around;
-                align-items: baseline;
-                // width: 100%;
+                
+                justify-content:space-around;
+                // align-items: baseline;
+                
                 // width: 768px;
                 // margin-left: 0px;
                 
@@ -44,8 +43,9 @@
     
         @media screen and (min-width: 1200px) {
         margin: 0 auto;
-            align-items: baseline;
+        justify-content: center; 
         flex-direction: row;
+        
         width: 1200px;
         
         
