@@ -1944,6 +1944,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__block--position {
+    margin: 0 auto;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
