@@ -1894,13 +1894,6 @@ img {
   padding-bottom: 60px;
 }
 
-.conteiner {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 768px) {
   .footer__position-tablet {
     display: -webkit-box;
@@ -1928,6 +1921,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 @media screen and (min-width: 320px) {
   .footer__block--position {
